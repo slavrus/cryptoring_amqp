@@ -1,0 +1,20 @@
+{application, cryptoring_amqp,
+ [{description, "An OTP application"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {mod, { cryptoring_amqp_app, []}},
+  {applications,
+   [kernel,
+    stdlib,
+    lager,
+    amqp_client,
+    hackney,
+    couchbeam
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {maintainers, []},
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
